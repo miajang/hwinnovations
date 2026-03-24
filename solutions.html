@@ -155,6 +155,8 @@ section { padding: 80px 24px; }
 
 /* ── CARDS ── */
 .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid-4 { grid-template-columns: repeat(4, 1fr); }
 .card {
   background: var(--white); border-radius: 10px; padding: 32px 24px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
@@ -282,14 +284,11 @@ section { padding: 80px 24px; }
   .hero p { font-size: 1rem; }
   section { padding: 56px 24px; }
   .section-title { font-size: 1.5rem; }
-  .card-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .card-grid { grid-template-columns: 1fr; gap: 16px; }
   .services-grid { grid-template-columns: 1fr; }
   .approach-grid { grid-template-columns: 1fr; gap: 32px; }
   .cta { padding: 64px 24px !important; }
   .cta h2 { font-size: 1.5rem; }
-}
-@media (max-width: 480px) {
-  .card-grid { grid-template-columns: 1fr; }
 }
 
 /* ── INNER PAGE HERO ── */
@@ -358,7 +357,7 @@ section.hero.hero-inner p { max-width: 640px; margin: 0 auto 40px; line-height: 
     <h2 class="section-title reveal" style="text-align:center;">Platforms That Power Your Mission</h2>
     <p class="section-subtitle reveal" style="text-align:center;max-width:680px;margin-left:auto;margin-right:auto;">Purpose-built solutions that centralize data, automate workflows, and deliver real-time insights — tailored to your team's unique needs.</p>
 
-    <div class="card-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="card-grid card-grid-3">
       <div class="card reveal reveal-delay-1" style="text-align:center;">
         <div class="card-icon icon-blue" style="margin:0 auto 20px;">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -395,7 +394,7 @@ section.hero.hero-inner p { max-width: 640px; margin: 0 auto 40px; line-height: 
     <h2 class="section-title reveal" style="text-align:center;">Industries &amp; Partners</h2>
     <p class="section-subtitle reveal" style="text-align:center;max-width:640px;margin-left:auto;margin-right:auto;">We work across sectors where data, policy, and health intersect — delivering tailored solutions that meet real-world needs.</p>
 
-    <div class="card-grid" style="grid-template-columns:repeat(4,1fr);">
+    <div class="card-grid card-grid-4">
       <div class="card reveal reveal-delay-1" style="text-align:center;">
         <div class="card-icon icon-blue" style="margin:0 auto 20px;">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
